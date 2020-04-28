@@ -683,7 +683,7 @@ function tapatalk_pre_output_page(&$page)
 function tapatalk_postbit(&$post)
 {
     global $mybb;
-    require_once MYBB_ROOT.$mybb->settings['tapatalk_directory'].'/emoji/emoji.php';
+    require_once MYBB_ROOT.'/mobiquo/emoji/emoji.php';
     $post['message'] = emoji_name_to_unified($post['message']);
     $post['message'] = emoji_unified_to_html($post['message']);
     return $post;
