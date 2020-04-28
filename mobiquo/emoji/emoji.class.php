@@ -1,5 +1,5 @@
 <?php
-require_once MYBB_ROOT.'/mobiquo/emoji/emoji.class.php';
+require_once MYBB_ROOT.'/mobiquo/emoji/emoji.php';
 class tapatalkEmoji
 {
 	static public function covertEmojiToName($data) {   	
