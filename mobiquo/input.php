@@ -10,7 +10,7 @@ class Tapatalk_Input {
 
     static public function filterXmlInput(array $filters, $xmlrpc_params){
         global $db, $mybb;
-		require_once MYBB_ROOT.$mybb->settings['tapatalk_directory'].'/emoji/emoji.class.php';
+		require_once MYBB_ROOT.'/mobiquo/emoji/emoji.class.php';
         $params = php_xmlrpc_decode($xmlrpc_params);
 
         // handle upload requests etc.

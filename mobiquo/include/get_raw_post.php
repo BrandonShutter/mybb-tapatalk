@@ -7,7 +7,7 @@ require_once MYBB_ROOT."inc/functions_upload.php";
 function get_raw_post_func($xmlrpc_params)
 {
 	global $db, $lang, $theme, $plugins, $mybb, $session, $settings, $cache, $time, $mybbgroups;
-	require_once MYBB_ROOT.$mybb->settings['tapatalk_directory'].'/emoji/emoji.class.php';
+	require_once MYBB_ROOT.'/mobiquo/emoji/emoji.class.php';
 	$lang->load("editpost");
 
 	$input = Tapatalk_Input::filterXmlInput(array(

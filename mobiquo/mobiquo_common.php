@@ -350,7 +350,7 @@ function process_short_content_preg_replace_callback($maches){return mobi_color_
 function process_short_content($post_text, $parser = null, $length = 200)
 {
 	global $parser,$mybb;
-	require_once MYBB_ROOT.$mybb->settings['tapatalk_directory'].'/emoji/emoji.class.php';
+	require_once MYBB_ROOT.'/mobiquo/emoji/emoji.class.php';
 	$post_text = tapatalkEmoji::covertNameToEmpty($post_text);
 
     if($parser === null) {
@@ -415,7 +415,7 @@ function process_post($post, $returnHtml = false)
 {
 	global $mybb;
 
-	require_once MYBB_ROOT.$mybb->settings['tapatalk_directory'].'/emoji/emoji.class.php';
+	require_once MYBB_ROOT.'/mobiquo/emoji/emoji.class.php';
 	$post = tapatalkEmoji::covertHtmlToEmoji($post);
 
     if($returnHtml){

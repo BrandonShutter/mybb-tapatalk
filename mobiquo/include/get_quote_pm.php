@@ -10,7 +10,7 @@ require_once MYBB_ROOT."inc/datahandlers/pm.php";
 function get_quote_pm_func($xmlrpc_params)
 {	
 	global $db, $lang, $theme, $plugins, $mybb, $session, $settings, $cache, $time, $mybbgroups;		
-	require_once MYBB_ROOT.$mybb->settings['tapatalk_directory'].'/emoji/emoji.class.php';
+	require_once MYBB_ROOT.'/mobiquo/emoji/emoji.class.php';
 	$input = Tapatalk_Input::filterXmlInput(array(
 		'message_id' => Tapatalk_Input::INT,
 	), $xmlrpc_params);
